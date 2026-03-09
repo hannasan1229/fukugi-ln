@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- DE -->
+  <url>
+    <loc>https://fukugi-ln.com/de</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fukugi-ln.com/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fukugi-ln.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fukugi-ln.com/jp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fukugi-ln.com/de"/>
+  </url>
+
+  <!-- EN -->
+  <url>
+    <loc>https://fukugi-ln.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fukugi-ln.com/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fukugi-ln.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fukugi-ln.com/jp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fukugi-ln.com/de"/>
+  </url>
+
+  <!-- JP -->
+  <url>
+    <loc>https://fukugi-ln.com/jp</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fukugi-ln.com/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fukugi-ln.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fukugi-ln.com/jp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fukugi-ln.com/de"/>
+  </url>
+
+</urlset>

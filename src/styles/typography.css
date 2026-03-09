@@ -1,0 +1,19 @@
+/* =========================
+   Typography
+   ========================= */
+
+.font-cursive {
+  font-family: "Dancing Script", cursive;
+}
+
+.font-sans {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Headings default tuning */
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.04em;
+}

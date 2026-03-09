@@ -1,0 +1,56 @@
+/* =========================
+   Layout & Structure
+   ========================= */
+
+  html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* NAV HEIGHT OFFSET
+   used for internal anchors */
+:root {
+  --nav-height: 72px;
+}
+
+/* Safeguard: falls dynamische Seiten intern H1 zu hoch sitzt */
+.page-top-offset {
+  padding-top: calc(var(--nav-height) + 1rem);
+}
+
+/* NAV */
+nav ul li:hover {
+  cursor: pointer;
+}
+
+/* HERO */
+.hero-container {
+  position: relative;
+  height: 60vh;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+/* HOME SECTION OFFSET */
+#about {
+  margin-top: -40px;
+}
+
+/* Dynamic content container */
+#dynamic-content {
+  position: relative;
+}
