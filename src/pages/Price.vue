@@ -251,7 +251,7 @@ defineProps({
         {{ conditionsTitle }}
       </h3>
 
-      <ul class="space-y-4">
+      <ul class="space-y-2">
         <li
           v-for="(c, i) in conditions"
           :key="i"

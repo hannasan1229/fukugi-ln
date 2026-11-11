@@ -6,11 +6,11 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-<Hero
-  title="Language Services & Technical Data Analysis<br>Maho Fukuda ｜ Fukugi"
-  subtitle="Japanese–German & Japanese–English<br>For industry, research, and international projects"
-  cta="Get in touch"
-/>
+  <Hero
+    title="Language Services & Technical Data Analysis<br>Maho Fukuda ｜ Fukugi"
+    subtitle="Japanese–German & Japanese–English<br>For industry, research, and international projects"
+    cta="Get in touch"
+  />
 
   <About
     :tabLabels="{
@@ -27,20 +27,24 @@ import Footer from "@/components/Footer.vue";
     careerTitle="Career"
     :careerTimeline="[
       {
-        date: '10.2022 – Present',
-        text: 'Technical and interpreting work in the automotive-related sector in Germany',
+        date: 'Oct 2022 – Sep 2026',
+        company: 'BMW Group',
+        text: 'Lithium-ion batteries (LIB), electrolyte composition, electrochemical cell characterization and dry coating',
       },
       {
-        date: '02.2021 – 09.2022',
-        text: 'Research-related work at a German research institute',
+        date: 'Feb 2021 – Sep 2022',
+        company: 'Fraunhofer IKTS',
+        text: 'Lithium-ion battery cell concepts, post-mortem analysis and cell design optimization',
       },
       {
-        date: '11.2018 – 01.2021',
-        text: 'Technical marketing at a Japanese company in Germany',
+        date: 'Nov 2018 – Jan 2021',
+        company: 'Maxell Europe Ltd.',
+        text: 'Technical support for lithium-ion and solid-state batteries, customized battery concepts and feasibility studies',
       },
       {
-        date: 'Japan 2016-',
-        text: 'Industry experience in the Japanese manufacturing sector',
+        date: 'Dec 2016 – Oct 2018',
+        company: 'Maxell Ltd., Japan',
+        text: 'Design and process development of manganese-lithium coin cells',
       },
     ]"
     serviceTitle="Services"

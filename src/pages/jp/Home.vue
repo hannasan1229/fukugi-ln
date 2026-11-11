@@ -6,11 +6,11 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-<Hero
-  title="語学サービス・技術データ解析｜福田真帆（Fukugi）"
-  subtitle="日独・日英対応｜技術・研究・国際プロジェクト向け"
-  cta="お問い合わせ"
-/>
+  <Hero
+    title="語学サービス・技術データ解析｜福田真帆（Fukugi）"
+    subtitle="日独・日英対応｜技術・研究・国際プロジェクト向け"
+    cta="お問い合わせ"
+  />
 
   <About
     profileTitle="福田真帆"
@@ -27,20 +27,24 @@ import Footer from "@/components/Footer.vue";
     careerTitle="経歴"
     :careerTimeline="[
       {
-        date: '2022.10 – 現在',
-        text: 'ドイツ自動車関連分野にて、技術業務および日英独通訳に従事',
+        date: '2022年10月 – 2026年9月',
+        company: 'BMW Group',
+        text: 'リチウムイオン電池（LIB）、電解液組成、電気化学的なセル特性評価、ドライコーティング',
       },
       {
-        date: '2021.02 – 2022.09',
-        text: 'ドイツの研究機関にて、国際プロジェクト対応',
+        date: '2021年2月 – 2022年9月',
+        company: 'Fraunhofer IKTS',
+        text: 'リチウムイオン電池のセルコンセプト、劣化解析、セル設計の最適化',
       },
       {
-        date: '2018.09 – 2021.01',
-        text: 'ドイツにおける日系企業での技術系マーケティング業務',
+        date: '2018年11月 – 2021年1月',
+        company: 'Maxell Europe Ltd.',
+        text: 'リチウムイオン電池・全固体電池の技術サポート、顧客ニーズに応じた電池設計、実現可能性調査',
       },
       {
-        date: '日本国内 2016-',
-        text: '製造業分野にて、化学・技術関連業務に従事',
+        date: '2016年12月 – 2018年10月',
+        company: 'Maxell Ltd.（日本）',
+        text: '二酸化マンガンリチウムコイン電池の設計・製造プロセス開発',
       },
     ]"
     serviceTitle="サービス内容"

@@ -101,8 +101,14 @@ function showTab(tab) {
               <span
                 class="inline-block w-3 h-3 aspect-square bg-lime-700 rounded-full flex-shrink-0 mt-1.5"
               ></span>
+
               <div>
                 <p class="font-semibold">{{ item.date }}</p>
+
+                <p v-if="item.company" class="font-semibold text-lime-800">
+                  {{ item.company }}
+                </p>
+
                 <p class="text-lime-800 text-sm leading-relaxed">
                   {{ item.text }}
                 </p>
@@ -209,19 +215,19 @@ function showTab(tab) {
           :key="i"
           class="bg-white border rounded-xl overflow-hidden"
         >
-         <ServiceImage
-  :src="serviceImages.technical[item.key]"
-  :alt="item.title"
-/>
+          <ServiceImage
+            :src="serviceImages.technical[item.key]"
+            :alt="item.title"
+          />
 
-<!-- 🔽 Beispielgrafik -->
-<div class="bg-white p-4 flex items-center justify-center h-[240px]">
-  <img
-    :src="serviceImages.technical[`${item.key}Example`]"
-    alt="Example analysis"
-    class="max-h-full w-auto object-contain"
-  />
-</div>
+          <!-- 🔽 Beispielgrafik -->
+          <div class="bg-white p-4 flex items-center justify-center h-[240px]">
+            <img
+              :src="serviceImages.technical[`${item.key}Example`]"
+              alt="Example analysis"
+              class="max-h-full w-auto object-contain"
+            />
+          </div>
           <component
             :is="technicalIcons[i]"
             class="w-6 h-6 text-lime-700 mb-2"

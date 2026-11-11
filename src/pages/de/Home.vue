@@ -7,11 +7,11 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-<Hero
-  title="Technische Sprachdienstleistungen & Datenanalyse<br>Maho Fukuda ｜ Fukugi"
-  subtitle="Japanisch–Deutsch & Japanisch–Englisch<br>Für Technik, Industrie und wissenschaftliche Projekte"
-  cta="Kontakt aufnehmen"
-/>
+  <Hero
+    title="Technische Sprachdienstleistungen & Datenanalyse<br>Maho Fukuda ｜ Fukugi"
+    subtitle="Japanisch–Deutsch & Japanisch–Englisch<br>Für Technik, Industrie und wissenschaftliche Projekte"
+    cta="Kontakt aufnehmen"
+  />
   <About
     :tabLabels="{
       profile: 'Profil',
@@ -47,20 +47,24 @@ import Footer from "@/components/Footer.vue";
     careerTitle="Werdegang"
     :careerTimeline="[
       {
-        date: '10.2022 – heute',
-        text: 'Tätigkeit im automobilnahen Technikbereich in Deutschland',
+        date: '10.2022 – 09.2026',
+        company: 'BMW Group',
+        text: 'Lithium-Ionen-Batterien (LIB), Elektrolytzusammensetzung, elektrochemische Zellcharakterisierung und Trockenbeschichtung',
       },
       {
         date: '02.2021 – 09.2022',
-        text: 'Arbeit in einer deutschen Forschungseinrichtung',
+        company: 'Fraunhofer IKTS',
+        text: 'Zellkonzepte für Lithium-Ionen-Batterien, Post-Mortem-Analysen und Zelldesign-Optimierung',
       },
       {
         date: '11.2018 – 01.2021',
-        text: 'Technische Marketing­tätigkeit in einem japanischen Unternehmen in Deutschland',
+        company: 'Maxell Europe Ltd.',
+        text: 'Technischer Support für Lithium-Ionen- und Festkörperbatterien, kundenspezifische Batteriekonzepte und Machbarkeitsstudien',
       },
       {
-        date: 'Japan 2016-',
-        text: 'Berufserfahrung in der japanischen Industrie',
+        date: '12.2016 – 10.2018',
+        company: 'Maxell Ltd., Japan',
+        text: 'Design und Prozessentwicklung von Mangan-Lithium-Knopfzellen',
       },
     ]"
     :privateServices="[
