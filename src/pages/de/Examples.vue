@@ -37,7 +37,7 @@ import Footer from "@/components/Footer.vue";
 
   <Footer
     title="Impressum"
-    company="Fukugi Übersetzungsservice"
+    company="Fukugi | Technische Sprachdienstleistungen & Datenanalyse"
     address="München, Deutschland"
     phone="+49 (auf Anfrage)"
     email="contact@fukugi-ln.com"

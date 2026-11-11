@@ -14,7 +14,7 @@ defineProps({
     <img
       :src="heroBg"
       alt=""
-      class="w-full h-[60vh] md:h-[80vh] max-h-[520px] md:max-h-none object-cover object-top md:object-center"
+      class="w-full h-[48svh] md:h-[58svh] object-cover object-[center_80%]"
     />
 
     <!-- Overlay -->

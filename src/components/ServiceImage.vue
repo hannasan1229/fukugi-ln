@@ -12,11 +12,17 @@ const props = defineProps({
   },
   heightClass: {
     type: String,
-    default: "h-40", // Standard für Service Cards
+    default: "h-56",
   },
   roundedClass: {
     type: String,
     default: "",
+  },
+
+  // 🔥 NEU HIER
+  objectPosition: {
+    type: String,
+    default: "object-center",
   },
 })
 

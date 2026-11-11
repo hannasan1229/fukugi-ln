@@ -4,23 +4,26 @@ import About from "@/components/About.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import Privacy from "@/pages/Privacy.vue";
 import Footer from "@/components/Footer.vue";
-
 </script>
 
 <template>
- <Hero
-  title="Japanisch Dolmetscherin in München<br>Maho Fukuda ｜ Fukugi Translation"
-  subtitle="Japanisch–Deutsch & Japanisch–Englisch<br>Für Wirtschaft, Technik & private Anliegen"
+<Hero
+  title="Technische Sprachdienstleistungen & Datenanalyse<br>Maho Fukuda ｜ Fukugi"
+  subtitle="Japanisch–Deutsch & Japanisch–Englisch<br>Für Technik, Industrie und wissenschaftliche Projekte"
   cta="Kontakt aufnehmen"
 />
-
   <About
+    :tabLabels="{
+      profile: 'Profil',
+      service: 'Sprache',
+      technical: 'Data Analyse',
+    }"
     profileTitle="Über mich"
     :profileText="[
-  'Mein Name ist Maho Fukuda. Ich bin Dolmetscherin für Japanisch–Deutsch und Japanisch–Englisch mit Sitz in München.',
-  'Durch meinen chemischen Hintergrund sowie meine langjährige Erfahrung in der Industrie verfüge ich über ein tiefes Verständnis für technische und geschäftliche Zusammenhänge.',
-  'Mein Ziel ist es, nicht nur Worte zu übersetzen, sondern Inhalte klar, präzise und kulturell angemessen zu vermitteln.',
-]"
+      'Mein Name ist Maho Fukuda. Ich bin Dolmetscherin für Japanisch–Deutsch und Japanisch–Englisch mit Sitz in München.',
+      'Durch meinen chemischen Hintergrund sowie meine langjährige Erfahrung in der Industrie verfüge ich über ein tiefes Verständnis für technische und geschäftliche Zusammenhänge.',
+      'Mein Ziel ist es, nicht nur Worte zu übersetzen, sondern Inhalte klar, präzise und kulturell angemessen zu vermitteln.',
+    ]"
     serviceTitle="Leistungen"
     businessTitle="Business Dolmetschen"
     privateTitle="Private Unterstützung"
@@ -77,6 +80,26 @@ import Footer from "@/components/Footer.vue";
         text: 'Hilfe bei Verträgen und Anschaffungen.',
       },
     ]"
+    technicalTitle="Analyse & Engineering Support"
+    technicalIntro="Ich unterstütze die Interpretation komplexer Daten und fundierte Entscheidungen."
+    :technicalServices="[
+      {
+        key: 'battery',
+        title: 'Batterieanalyse',
+        text: 'Zyklusverhalten, SoH und Degradationsanalyse',
+      },
+      {
+        key: 'powder',
+        title: 'Materialbewertung & Datenanalyse',
+        text: 'Statistische Auswertung zur Identifikation von Einflussfaktoren',
+      },
+      {
+        key: 'chemistry',
+        title: 'Physikalische & Prozessanalyse',
+        text: 'Visualisierung und Interpretation von Material- und Prozessdaten (z. B. Scherkräfte, thermische Verteilung)',
+      },
+    ]"
+    demoButtonText="Demo ansehen"
   />
 
   <!-- ContactForm -->
@@ -93,7 +116,7 @@ import Footer from "@/components/Footer.vue";
   <!-- Footer -->
   <Footer
     title="Impressum"
-    company="Fukugi Übersetzungsservice"
+    company="Fukugi | Technische Sprachdienstleistungen & Datenanalyse"
     address="München, Deutschland"
     phone="+49 (auf Anfrage)"
     email="contact@fukugi-ln.com"

@@ -45,16 +45,19 @@ const labels = {
     home: "Home",
     price: "Preise",
     examples: "Ablauf",
+    tech: "Demo",
   },
   en: {
     home: "Home",
     price: "Pricing",
     examples: "Workflow",
+    tech: "Demo",
   },
   jp: {
     home: "ホーム",
     price: "料金",
     examples: "流れ",
+    tech: "技術デモ",
   },
 };
 
@@ -62,6 +65,7 @@ const menuItems = computed(() => [
   { key: "home", path: "" },
   { key: "price", path: "price" },
   { key: "examples", path: "examples" },
+  { key: "tech", path: "data-analysis" },
 ]);
 
 /* =========================

@@ -37,7 +37,7 @@ import Footer from "@/components/Footer.vue";
 
   <Footer
     title="Legal Notice"
-    company="Fukugi Translation Services"
+    company="Fukugi | Language Services & Technical Data Analysis"
     address="Munich, Germany"
     phone="+49 (available upon request)"
     email="contact@fukugi-ln.com"

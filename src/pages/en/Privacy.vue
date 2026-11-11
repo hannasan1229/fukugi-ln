@@ -7,7 +7,7 @@ import Footer from "@/components/Footer.vue";
   <Privacy
     imprintTitle="Legal Notice"
     :imprintText="[
-      'Fukugi Translation & Interpretation Service',
+      'Fukugi Language & Data Services',
       'Owner: Maho Fukuda',
       'Munich, Germany',
       'Email: contact@fukugi-ln.com'
@@ -33,7 +33,7 @@ import Footer from "@/components/Footer.vue";
    <!-- Footer -->
   <Footer
     title="Legal Notice"
-    company="Fukugi Translation Services"
+    company="Fukugi | Language Services & Technical Data Analysis"
     address="Munich, Germany"
     phone="+49 (available upon request) "
     email="contact@fukugi-ln.com"

@@ -37,7 +37,7 @@ import Footer from "@/components/Footer.vue";
 
   <Footer
     title="運営者情報"
-    company="フクギ 通訳・翻訳サービス"
+    company="Fukugi | 語学サービス・技術データ解析"
     address="ドイツ・ミュンヘン"
     phone="+49（お問い合わせ後にご案内）"
     email="contact@fukugi-ln.com"

@@ -12,14 +12,21 @@ import Footer from "@/components/Footer.vue";
       description:
         'Professional interpreting for meetings, appointments, and business events in specialised contexts.',
       business: [
-        { label: 'Half day', price: 'from €380' },
-        { label: 'Full day', price: 'from €650' },
-        { label: 'Remote assignment', price: 'from €550 / day' },
+        { label: 'Half day', price: 'from €300' },
+        { label: 'Full day', price: 'from €600' },
+        { label: 'Remote assignment', price: 'from €500 / day' },
+        {
+          label: 'Trade Fair & Meeting Report',
+          price: 'First report free, then €50 / report',
+        },
       ],
       private: {
-        text: 'Individual assignments in a private context.',
-        price: 'from €60 (minimum charge)',
-        notes: ['Minimum charge applies', 'Travel time > 1h prorated'],
+        text: 'Individual interpreting assignments in a private context.',
+        price: 'Minimum charge: €80',
+        notes: [
+          'First hour includes travel time of up to 1 hour (one way)',
+          'Each additional 30 minutes: €30',
+        ],
       },
     }"
     :translation="{
@@ -27,10 +34,11 @@ import Footer from "@/components/Footer.vue";
       description:
         'Accurate translations of technical and business-related content.',
       standard: {
-        title: 'Project-based translation',
+        title: 'Project-based Translation',
         prices: [
-          { label: 'Unit price', price: 'project-based' },
-          { label: 'Price range', price: 'on request' },
+          { label: 'Basic package', price: 'from €200' },
+          { label: 'Included processing time', price: 'up to 3 hours' },
+          { label: 'Additional work', price: 'from €60 / hour' },
         ],
       },
       extras: [
@@ -71,11 +79,41 @@ import Footer from "@/components/Footer.vue";
       'Agreed services are to be paid in full',
       'Offers are project-based and time-limited',
     ]"
+    :technical="{
+      title: 'Technical Data Analysis',
+      description:
+        'Analysis, visualization, and evaluation of technical measurement data for research and industry.',
+
+      cards: [
+        {
+          type: 'Battery',
+          title: 'Battery Analysis',
+          text: 'dQ/dV, SoH, cycle data, ageing analysis, and technical plotting.',
+          price: 'Basic package from €250 ',
+          note: 'Includes up to approximately 4 hours of standard processing.',
+        },
+
+        {
+          type: 'Scientific',
+          title: 'Data Visualization',
+          text: 'Charts, reports, and structured preparation of experimental data.',
+          price: 'basic fee from €250 ',
+          note: 'Includes up to approximately 4 hours of standard processing.',
+        },
+
+        {
+          type: 'Custom',
+          title: 'Custom Evaluation',
+          text: 'Individual analysis workflows, automation, and lightweight analysis tools.',
+          price: 'on request',
+        },
+      ],
+    }"
   />
   <!-- Footer -->
   <Footer
     title="Legal Notice"
-    company="Fukugi Translation Services"
+    company="Fukugi | Language Services & Technical Data Analysis"
     address="Munich, Germany"
     phone="+49 (available upon request) "
     email="contact@fukugi-ln.com"

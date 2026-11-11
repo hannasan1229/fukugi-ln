@@ -7,7 +7,7 @@ import Footer from "@/components/Footer.vue";
   <Privacy
     imprintTitle="Impressum"
     :imprintText="[
-      'Fukugi Übersetzungsservice',
+      'Fukugi Technische Kommunikation & Datenanalyse',
       'Inhaberin: Maho Fukuda',
       'München, Deutschland',
       'E-Mail: contact@fukugi-ln.com'
@@ -32,7 +32,7 @@ import Footer from "@/components/Footer.vue";
 
   <Footer
     title="Impressum"
-    company="Fukugi Übersetzungsservice"
+    company="Fukugi | Technische Sprachdienstleistungen & Datenanalyse"
     address="München, Deutschland"
     phone="+49 auf Anfrage"
     email="contact@fukugi-ln.com"

@@ -7,7 +7,7 @@ import Footer from "@/components/Footer.vue";
   <Privacy
     imprintTitle="運営者情報"
     :imprintText="[
-      'Fukugi 翻訳・通訳サービス',
+      'Fukugi 言語サポート・データ分析',
       '代表者：福田 真帆',
       'ドイツ・ミュンヘン',
       'メール：contact@fukugi-ln.com'
@@ -33,7 +33,7 @@ import Footer from "@/components/Footer.vue";
   <!-- Footer -->
   <Footer
     title="運営者情報"
-    company="フクギ 通訳・翻訳サービス"
+    company="Fukugi | 語学サービス・技術データ解析"
     address="ドイツ・ミュンヘン"
     phone="+49 お問い合わせ後にご案内"
     email="contact@fukugi-ln.com"

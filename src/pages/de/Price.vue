@@ -14,14 +14,21 @@ Transparent, fair und verbindlich.
       description:
         'Professionelle Begleitung bei Meetings, Terminen und Veranstaltungen im Fach- und Business-Kontext.',
       business: [
-        { label: '½ Tag', price: 'ab 380 €' },
-        { label: '1 Tag', price: 'ab 650 €' },
-        { label: 'Remote-Einsatz', price: 'ab 550 € / Tag' },
+        { label: '½ Tag', price: 'ab 300 €' },
+        { label: '1 Tag', price: 'ab 600 €' },
+        { label: 'Remote-Einsatz', price: 'ab 500 € / Tag' },
+        {
+          label: 'Messe- und Meetingbericht',
+          price: 'Erster Bericht kostenlos, \ndanach 50 € / Bericht',
+        },
       ],
       private: {
-        text: 'Individuelle Einsätze im privaten Kontext.',
-        price: 'ab 60 € (Mindestaufwand)',
-        notes: ['Mindestaufwand berücksichtigt', 'Anreise > 1h anteilig'],
+        text: 'Individuelle Dolmetscheinsätze im privaten Kontext.',
+        price: 'Mindestauftragswert: 80 €',
+        notes: [
+          'Erste Stunde inklusive Anreise bis zu 1 Stunde (einfache Fahrt)',
+          'Jede weitere 30 Minuten: 30 €',
+        ],
       },
     }"
     :translation="{
@@ -29,10 +36,14 @@ Transparent, fair und verbindlich.
       description:
         'Präzise Übersetzungen technischer und wirtschaftlicher Inhalte.',
       standard: {
-        title: 'Projektübersetzungen',
+        title: 'Projektbezogene Fachübersetzung',
         prices: [
-          { label: 'Einheitspreis', price: 'projektbasiert' },
-          { label: 'Preisrahmen', price: 'auf Anfrage' },
+          { label: 'Grundpaket', price: 'ab 200 €' },
+          {
+            label: 'Enthaltener Bearbeitungsumfang',
+            price: 'bis zu 3 Stunden',
+          },
+          { label: 'Zusätzlicher Aufwand', price: 'ab 60 € / Stunde' },
         ],
       },
       extras: [
@@ -73,11 +84,41 @@ Transparent, fair und verbindlich.
       'Notwendige Spesen (z. B. Reise- und Übernachtungskosten) werden zusätzlich berechnet, sofern nicht anders vereinbart',
       'Vorbereitungsleistungen werden nur dann berechnet, wenn sie vorab im Angebot ausgewiesen sind',
     ]"
+    :technical="{
+      title: 'Technische Datenanalyse',
+      description:
+        'Analyse, Visualisierung und Auswertung technischer Messdaten für Forschung und Industrie.',
+
+      cards: [
+        {
+          type: 'Battery',
+          title: 'Batterieanalyse',
+          text: 'dQ/dV, SoH, Zyklusdaten, Alterungsanalyse und Diagrammerstellung.',
+          price: 'Grundpreis ab 200 €',
+          note: 'Enthält bis zu ca. 4 Stunden standardisierte Datenverarbeitung.',
+        },
+
+        {
+          type: 'Scientific',
+          title: 'Datenvisualisierung',
+          text: 'Diagramme, Reports und strukturierte Aufbereitung experimenteller Daten.',
+          price: 'Grundpreis ab 250 €',
+          note: 'Enthält bis zu ca. 4 Stunden standardisierte Datenverarbeitung.',
+        },
+
+        {
+          type: 'Custom',
+          title: 'Individuelle Auswertung',
+          text: 'Spezifische Analysen, Automatisierung und kleine Analyse-Tools.',
+          price: 'auf Anfrage',
+        },
+      ],
+    }"
   />
 
   <Footer
     title="Impressum"
-    company="Fukugi Übersetzungsservice"
+    company="Fukugi | Technische Sprachdienstleistungen & Datenanalyse"
     address="München, Deutschland"
     phone="+49 auf Anfrage"
     email="contact@fukugi-ln.com"

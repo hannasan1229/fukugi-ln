@@ -6,21 +6,24 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-  <Hero
-    title="Japanese Interpreter & Translator in Munich<br>
-Maho Fukuda | Fukugi Translation"
-    subtitle="Japanese–German & Japanese–English
-Business, technical & private support"
-    cta="Contact"
-  />
+<Hero
+  title="Language Services & Technical Data Analysis<br>Maho Fukuda ｜ Fukugi"
+  subtitle="Japanese–German & Japanese–English<br>For industry, research, and international projects"
+  cta="Get in touch"
+/>
 
   <About
+    :tabLabels="{
+      profile: 'Profile',
+      service: 'Translation',
+      technical: 'Data Analysis',
+    }"
     profileTitle="About Me"
     :profileText="[
-  'I am based in Munich and provide Japanese–German and Japanese–English interpreting services.',
-  'With a background in chemical engineering, I have nearly ten years of experience in the manufacturing industry, particularly in technical and business environments.',
-  'My goal is not only to translate words, but also to convey cultural context, nuances, and intentions clearly and accurately.',
-]"
+      'I am based in Munich and provide Japanese–German and Japanese–English interpreting services.',
+      'With a background in chemical engineering, I have nearly ten years of experience in the manufacturing industry, particularly in technical and business environments.',
+      'My goal is not only to translate words, but also to convey cultural context, nuances, and intentions clearly and accurately.',
+    ]"
     careerTitle="Career"
     :careerTimeline="[
       {
@@ -77,6 +80,25 @@ Business, technical & private support"
         text: 'Assistance with contracts, real estate, or major purchases.',
       },
     ]"
+    technicalTitle="Technical Support"
+    :technicalServices="[
+      {
+        key: 'battery',
+        text: 'SoH, degradation, dQ/dV',
+        image: '/images/battery.jpg',
+      },
+      {
+        key: 'powder',
+        text: 'Mechanical & tensile analysis',
+        image: '/images/material.jpg',
+      },
+      {
+        key: 'chemistry',
+        text: 'Wetting & contact angle',
+        image: '/images/wetting.jpg',
+      },
+    ]"
+    demoButtonText="View Demo"
   />
 
   <!-- ContactForm -->
@@ -93,7 +115,7 @@ Business, technical & private support"
   <!-- Footer -->
   <Footer
     title="Legal Notice"
-    company="Fukugi Translation Services"
+    company="Fukugi | Language Services & Technical Data Analysis"
     address="Munich, Germany"
     phone="+49 (available upon request) "
     email="contact@fukugi-ln.com"

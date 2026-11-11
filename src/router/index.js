@@ -16,30 +16,69 @@ import PrivacyDE from "@/pages/de/Privacy.vue";
 import PrivacyEN from "@/pages/en/Privacy.vue";
 import PrivacyJP from "@/pages/jp/Privacy.vue";
 
+import DataJP from "@/pages/jp/DataAnalysis.vue";
+import DataDE from "@/pages/de/DataAnalysis.vue";
+import DataEN from "@/pages/en/DataAnalysis.vue";
+
 /* 🌍 Titel-Definitionen */
 const titles = {
   jp: {
-    home: "ミュンヘン日本語通訳・翻訳｜福田真帆（Fukugi Translation）",
-    price: "料金｜ミュンヘン日本語通訳・翻訳",
-    examples: "通訳の流れ｜福田真帆",
-    privacy: "プライバシーポリシー｜Fukugi Translation",
+    home:
+      "技術コミュニケーション・通訳・データ解析｜福田真帆（Fukugi）",
+    price:
+      "料金案内｜技術コミュニケーション・通訳・データ解析",
+    examples:
+      "サービスの流れ｜Fukugi",
+    privacy:
+      "プライバシーポリシー｜Fukugi",
+    data:
+      "データ解析・可視化｜Fukugi",
   },
+
   de: {
-    home: "Japanische Dolmetscherin in München | Fukugi Translation",
-    price: "Preise | Japanische Dolmetscherin München",
-    examples: "Ablauf | Fukugi Translation",
-    privacy: "Datenschutz | Fukugi Translation",
+    home:
+      "Sprache & Datenanalyse | Fukugi",
+    price:
+      "Preise | Fukugi",
+    examples:
+      "Ablauf | Fukugi",
+    privacy:
+      "Datenschutz | Fukugi",
+    data:
+      "Datenanalyse & Visualisierung | Fukugi",
   },
+
   en: {
-    home: "Japanese Interpreter in Munich | Fukugi Translation",
-    price: "Pricing | Japanese Interpreter Munich",
-    examples: "Workflow | Fukugi Translation",
-    privacy: "Privacy Policy | Fukugi Translation",
+    home:
+      "Language & Data Analysis | Fukugi",
+    price:
+      "Pricing | Fukugi",
+    examples:
+      "Workflow | Fukugi",
+    privacy:
+      "Privacy Policy | Fukugi",
+    data:
+      "Data Analysis & Visualization | Fukugi",
   },
 };
 
 const routes = [
-  { path: "/", redirect: "/jp" },
+  {
+  path: "/",
+  redirect: () => {
+    const lang = navigator.language.toLowerCase();
+
+    if (lang.startsWith("ja")) {
+      return "/jp";
+    }
+
+    if (lang.startsWith("de")) {
+      return "/de";
+    }
+
+    return "/en";
+  },
+},
 
   { path: "/jp", component: HomeJP, meta: { lang: "jp", page: "home" } },
   { path: "/de", component: HomeDE, meta: { lang: "de", page: "home" } },
@@ -56,6 +95,11 @@ const routes = [
   { path: "/jp/privacy", component: PrivacyJP, meta: { lang: "jp", page: "privacy" } },
   { path: "/de/privacy", component: PrivacyDE, meta: { lang: "de", page: "privacy" } },
   { path: "/en/privacy", component: PrivacyEN, meta: { lang: "en", page: "privacy" } },
+
+  { path: "/jp/data-analysis", component: DataJP, meta: { lang: "jp", page: "data" } },
+  { path: "/de/data-analysis", component: DataDE, meta: { lang: "de", page: "data" } },
+  { path: "/en/data-analysis", component: DataEN, meta: { lang: "en", page: "data" } },
+
 ];
 
 const descriptions = {
@@ -63,19 +107,19 @@ const descriptions = {
     home: "ミュンヘンを拠点に、日本語・ドイツ語・英語の通訳・翻訳サービスを提供。ビジネス・技術・プライベート対応。",
     price: "日本語通訳・翻訳サービスの料金案内。ミュンヘン対応。",
     examples: "通訳サービスの流れと対応内容についてご紹介します。",
-    privacy: "Fukugi Translationのプライバシーポリシー。",
+    privacy: "Fukugi のプライバシーポリシー。",
   },
   de: {
     home: "Professionelle Japanisch–Deutsch & Japanisch–Englisch Dolmetscherin in München. Business, Technik & private Anliegen.",
     price: "Preise für Japanisch Dolmetschen und Übersetzen in München.",
     examples: "Ablauf und Beispiele für professionelle Dolmetschleistungen.",
-    privacy: "Datenschutzerklärung von Fukugi Translation.",
+    privacy: "Datenschutzerklärung von Fukugi .",
   },
   en: {
     home: "Professional Japanese–German & Japanese–English interpreter in Munich. Business, technical and private support.",
-    price: "Pricing for Japanese interpreting and translation services in Munich.",
+    price: "Pricing for Japanese interpreting and  services in Munich.",
     examples: "Workflow and examples of professional interpreting services.",
-    privacy: "Privacy policy of Fukugi Translation.",
+    privacy: "Privacy policy of Fukugi .",
   },
 };
 

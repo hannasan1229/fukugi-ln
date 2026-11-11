@@ -7,8 +7,9 @@ defineProps({
   interpreting: Object,
   translation: Object,
   coaching: Object,
+  technical: Object,
 
-  coachingNote: String, // 👈 NEU
+  coachingNote: String,
 
   conditionsTitle: String,
   conditions: Array,
@@ -52,10 +53,13 @@ defineProps({
               <li
                 v-for="(item, i) in interpreting.business"
                 :key="i"
-                class="flex justify-between border-b pb-2"
+                class="grid grid-cols-[35%_65%] gap-2 border-b pb-2 items-start"
               >
                 <span>{{ item.label }}</span>
-                <strong>{{ item.price }}</strong>
+
+                <strong class="text-right whitespace-pre-line">
+                  {{ item.price }}
+                </strong>
               </li>
             </ul>
           </div>
@@ -148,7 +152,7 @@ defineProps({
     <section class="bg-amber-50 rounded-3xl p-6 sm:p-8 lg:p-12">
       <div class="space-y-8">
         <!-- LEFT -->
-       <header class="lg:col-span-4">
+        <header class="lg:col-span-4">
           <h2 class="text-3xl font-bold text-lime-900">
             {{ coaching.title }}
           </h2>
@@ -186,6 +190,56 @@ defineProps({
             <p class="mt-6 text-sm font-semibold">
               {{ card.price }}
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNICAL ================= -->
+    <section class="bg-amber-50 rounded-3xl p-6 sm:p-8 lg:p-12">
+      <div class="space-y-8">
+        <header>
+          <h2 class="text-3xl font-bold text-lime-900">
+            {{ technical.title }}
+          </h2>
+
+          <p class="mt-3 text-lime-700">
+            {{ technical.description }}
+          </p>
+        </header>
+
+        <!-- THREE CARDS -->
+        <div class="grid gap-6 sm:gap-8 md:grid-cols-3 items-stretch">
+          <div
+            v-for="(card, i) in technical.cards"
+            :key="i"
+            class="bg-white rounded-3xl p-6 sm:p-8 border h-full flex flex-col"
+          >
+            <span class="badge-business self-start">
+              {{ card.type }}
+            </span>
+
+            <h4 class="font-semibold mt-4 mb-2">
+              {{ card.title }}
+            </h4>
+
+            <p class="text-sm text-gray-700 mt-4">
+              {{ card.text }}
+            </p>
+
+            <!-- PRICE & NOTE -->
+            <div class="mt-auto pt-6">
+              <p class="text-sm font-semibold">
+                {{ card.price }}
+              </p>
+
+              <p
+                v-if="card.note"
+                class="mt-2 text-xs text-gray-500 leading-relaxed"
+              >
+                {{ card.note }}
+              </p>
+            </div>
           </div>
         </div>
       </div>

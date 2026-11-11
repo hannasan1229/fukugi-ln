@@ -2,7 +2,8 @@
    Layout & Structure
    ========================= */
 
-  html, body {
+html,
+body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -27,16 +28,20 @@ nav ul li:hover {
 /* HERO */
 .hero-container {
   position: relative;
-  height: 60vh;
-  max-height: 300px;
+  height: 38vh;
+  min-height: 260px;
+  max-height: 420px;
   overflow: hidden;
 }
 
 .hero-slide {
   position: absolute;
   inset: 0;
+
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
   opacity: 0;
   transition: opacity 1.2s ease;
 }

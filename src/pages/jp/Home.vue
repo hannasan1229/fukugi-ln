@@ -6,21 +6,24 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-  <Hero
-    title="ミュンヘン日本語通訳・翻訳｜福田真帆（Fukugi Translation）"
-    subtitle="ビジネス・技術分野からプライベートまで
-日独・日英の専門通訳に対応"
-    cta="お問い合わせ"
-  />
+<Hero
+  title="語学サービス・技術データ解析｜福田真帆（Fukugi）"
+  subtitle="日独・日英対応｜技術・研究・国際プロジェクト向け"
+  cta="お問い合わせ"
+/>
 
   <About
     profileTitle="福田真帆"
+    :tabLabels="{
+      profile: 'プロフィール',
+      service: '翻訳 & 通訳',
+      technical: 'データ解析',
+    }"
     :profileText="[
-  'ミュンヘンを拠点に、日本語・ドイツ語および日本語・英語の通訳サービスを提供しています。',
-  '化学工学を専門とし、製造業を中心に約10年にわたる技術・ビジネス分野での実務経験があります。',
-  '単なる言葉の翻訳にとどまらず、文化的背景や意図、ニュアンスを正確かつ分かりやすく伝えることを大切にしています。',
-]
-"
+      'ミュンヘンを拠点に、日本語・ドイツ語および日本語・英語の通訳サービスを提供しています。',
+      '化学工学を専門とし、製造業を中心に約10年にわたる技術・ビジネス分野での実務経験があります。',
+      '単なる言葉の翻訳にとどまらず、文化的背景や意図、ニュアンスを正確かつ分かりやすく伝えることを大切にしています。',
+    ]"
     careerTitle="経歴"
     :careerTimeline="[
       {
@@ -35,7 +38,10 @@ import Footer from "@/components/Footer.vue";
         date: '2018.09 – 2021.01',
         text: 'ドイツにおける日系企業での技術系マーケティング業務',
       },
-      { date: '日本国内 2016-', text: '製造業分野にて、化学・技術関連業務に従事' },
+      {
+        date: '日本国内 2016-',
+        text: '製造業分野にて、化学・技術関連業務に従事',
+      },
     ]"
     serviceTitle="サービス内容"
     businessTitle="ビジネス通訳"
@@ -74,6 +80,28 @@ import Footer from "@/components/Footer.vue";
         text: '不動産・契約・購入時のサポート。',
       },
     ]"
+    technicalTitle="技術サポート"
+    :technicalServices="[
+      {
+        key: 'battery',
+        title: 'バッテリー解析',
+        text: 'サイクル寿命、SoH、dQ/dV解析',
+        exampleImage: '/images/plots/battery-curve.svg',
+      },
+      {
+        key: 'powder',
+        title: '材料評価',
+        text: '引張強度・破断解析',
+        exampleImage: '/images/plots/material-curve.svg',
+      },
+      {
+        key: 'chemistry',
+        title: '表面・濡れ性',
+        text: '接触角・界面評価',
+        exampleImage: '/images/plots/peak-analysis.svg',
+      },
+    ]"
+    demoButtonText="デモを見る"
   />
 
   <!-- ContactForm -->
@@ -90,7 +118,7 @@ import Footer from "@/components/Footer.vue";
   <!-- Footer -->
   <Footer
     title="運営者情報"
-    company="フクギ 通訳・翻訳サービス"
+    company="Fukugi | 語学サービス・技術データ解析"
     address="ドイツ・ミュンヘン"
     phone="+49（お問い合わせ後にご案内） "
     email="contact@fukugi-ln.com"

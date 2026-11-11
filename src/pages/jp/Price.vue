@@ -12,16 +12,20 @@ import Footer from "@/components/Footer.vue";
       description:
         '専門分野およびビジネス環境における会議・商談・各種イベントへの通訳対応。',
       business: [
-        { label: '半日', price: '380€〜' },
-        { label: '1日', price: '650€〜' },
-        { label: 'リモート対応', price: '550€〜／日' },
+        { label: '半日', price: '300 €～' },
+        { label: '1日', price: '600 €～' },
+        { label: 'リモート対応', price: '500 €～ / 日' },
+        {
+          label: '展示会・会議の報告書作成',
+          price: '初回無料、2回目以降 50 € / 件',
+        },
       ],
       private: {
-        text: '個人案件・プライベート対応。',
-        price: '60€〜（最低料金）',
+        text: '個人のお客様向けの通訳サービスです。',
+        price: '最低料金：80 €',
         notes: [
-          '最低限の作業時間を考慮',
-          '移動時間（1時間超は作業時間に該当）',
+          '最初の1時間は、片道1時間以内の移動時間を含みます。',
+          '以降30分ごとに30 €',
         ],
       },
     }"
@@ -29,10 +33,11 @@ import Footer from "@/components/Footer.vue";
       title: '専門翻訳',
       description: '技術・ビジネス分野における高精度な翻訳。',
       standard: {
-        title: 'プロジェクト翻訳',
+        title: '案件別専門翻訳',
         prices: [
-          { label: '単価', price: '案件ベース' },
-          { label: '料金', price: '要相談' },
+          { label: '基本料金', price: '200 €～' },
+          { label: '基本料金に含まれる作業時間', price: '最大3時間' },
+          { label: '追加作業', price: '60 € / 時間～' },
         ],
       },
       extras: [
@@ -72,12 +77,42 @@ import Footer from "@/components/Footer.vue";
       '合意された業務内容は全額お支払いいただきます',
       'お見積りは案件ごとに作成され、有効期限があります',
     ]"
+    :technical="{
+      title: '技術データ解析',
+      description:
+        '研究・産業分野向けの技術データ解析、可視化および評価サポート。',
+
+      cards: [
+        {
+          type: 'Battery',
+          title: 'バッテリー解析',
+          text: 'dQ/dV解析、SoH評価、サイクルデータ解析、劣化分析およびグラフ作成。',
+          price: '基本料金 250 €～',
+          note: '標準的なデータ処理を約4時間まで含みます。',
+        },
+
+        {
+          type: 'Scientific',
+          title: 'データ可視化',
+          text: '実験データのグラフ化、レポート作成および構造化支援。',
+          price: '基本料金 250 €～',
+          note: '標準的なデータ処理を約4時間まで含みます。',
+        },
+
+        {
+          type: 'Custom',
+          title: '個別解析サポート',
+          text: '個別要件に応じた解析、自動化および簡易解析ツール作成。',
+          price: '応相談',
+        },
+      ],
+    }"
   />
 
   <!-- Footer -->
   <Footer
     title="運営者情報"
-    company="フクギ 通訳・翻訳サービス"
+    company="Fukugi | 語学サービス・技術データ解析"
     address="ドイツ・ミュンヘン"
     phone="+49 お問い合わせ後にご案内"
     email="contact@fukugi-ln.com"
